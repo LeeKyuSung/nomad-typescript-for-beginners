@@ -1,23 +1,25 @@
-import { init, exit } from "./myPackage";
-init({ url: "http://localhost:3000", debug: true });
-exit(1);
-// head([1, 2, 3]);
-// hasIn({ a: { b: 2 } }, "a.b");
-// isBoolean(false);
-// toString(null);
-// split("a-b-c", "-");
-// hasPath({ a: { b: 2 } }, "a.b");
-// filter([1, 2, 3], Boolean);
-// every([true, 1, null, "yes"], Boolean);
-// map(["6", "8", "10"], (n) => parseInt(n, 10));
-// import {
-//   head,
-//   hasIn,
-//   isBoolean,
-//   toString,
-//   split,
-//   hasPath,
-//   filter,
-//   every,
-//   map,
-// } from "lodash";
+"use strict";
+// import { init, exit } from "./myPackage";
+Object.defineProperty(exports, "__esModule", { value: true });
+// init({ url: "http://localhost:3000", debug: true });
+// exit(1);
+// import head from "./lodash/head";
+// import hasIn from "./lodash/hasIn";
+// import isBoolean from "./lodash/isBoolean";
+// import toString from "./lodash/toString";
+// import split from "./lodash/split";
+// import hasPath from "./lodash/hasPath";
+// import filter from "./lodash/filter";
+// import every from "./lodash/every";
+// import map from "./lodash/map";
+var lodash_1 = require("lodash");
+console.log((0, lodash_1.head)([1, 2, 3]));
+// console.log(hasIn({ a: 1 }, "a"));
+// console.log(isBoolean(true));
+// console.log(toString(1));
+// console.log(split("a-b-c", "-"));
+// console.log(hasPath({ a: { b: 1 } }, "a.b"));
+// console.log(filter([1, 2, 3], (x: number) => x > 1));
+// console.log(every([true, 1, null, "yes"], Boolean));
+// console.log(every([true, 1], Boolean));
+// console.log(map([1, 2, 3], (x: number) => x * 2));
