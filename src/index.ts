@@ -1,4 +1,4 @@
-import { init, exit } from "myPackage";
+import { init, exit } from "./myPackage";
 
-init({ url: "https://example.com" });
+init({ url: "http://localhost:3000", debug: true });
 exit(1);
